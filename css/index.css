@@ -1,0 +1,85 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+.plane {
+    width: 100%;
+    height: 100%;
+    max-width: 420px;
+    max-height: 720px;
+    background: url(../images/startgame.png) no-repeat 0 0/100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* 开始游戏按钮 */
+
+.begin {
+    width: 160px;
+    height: 50px;
+    border-radius: 16px;
+    background-color: #ddd;
+    border-bottom: 2px solid #666;
+    position: absolute;
+    left: calc(50% - 70px);
+    bottom: 30px;
+}
+
+.begin:active {
+    height: 47px;
+    border: 0;
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+    display: none;
+    /*默认隐藏*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat 0 0/100% 100%;
+}
+
+.bg2 {
+    top: -720px;
+}
+
+
+/* 我方飞机 */
+
+.myplane {
+    width: 60px;
+    height: 72px;
+    background: url(../images/me.gif) no-repeat 0 0/100% 100%;
+    position: absolute;
+    left: calc(50% - 30px);
+    top: 680px;
+}
+
+img {
+    position: absolute;
+    z-index: 99;
+}
